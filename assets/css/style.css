@@ -142,3 +142,25 @@ hr {
     position: relative;
     bottom: 15px;
 }
+
+.form1 {
+    width: 920px;
+}
+
+.form2 {
+    width: 920px;
+    height: 200px;
+}
+
+form {
+
+    margin: 20px;
+}
+
+#submit {
+    text-align: center;
+    background: #4aaaa5;
+    color: #ffffff;
+    height: 40px;
+    width: 100px;
+}
