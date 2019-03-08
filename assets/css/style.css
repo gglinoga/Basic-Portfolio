@@ -1,42 +1,42 @@
 #name {
     background: #4aaaa5;
     color: white;
-    height: 50px;
+    height: 40px;
     width: 250px;
     position: absolute;
     left: 0px;
-    /* top: -20px; */
-    /* float: left; */
-    /* padding-top: 15px; */
     text-align: center;
     z-index: 1;
     font-weight: bold;
     border: #cccccc;
-    padding: 0;
+    padding-top: 10px;
     margin: 0;
     z-index: 10;
 }
-
-/* #about #portfolio #contact{
-    color: white;
-} */
 
 #about {
     float: right;
     position: relative;
     right: 30px;
+    text-align: center;
 }
 
 #portfolio {
     float: right;
     position: relative;
     right: 20px;
+    border-left: thin solid #cccccc;
+    padding-left: 10px;
+    text-align: center;
 }
 
 #contact {
     float: right;
     position: relative;
     right: 10px;
+    border-left: thin solid #cccccc;
+    padding-left: 10px;
+    text-align: center;
 }  
 
 #topmenu {
@@ -45,10 +45,6 @@
     height: 50px;
     width: 400px;
     background: white;
-    /* position: absolute;
-    top: 0px;
-    right: 50%; */
-    /* padding-top: 50px; */
     font-size: small;
     padding: 0;
     margin: 0;
@@ -63,9 +59,8 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
     top: 0;
-    left: 10%;
     padding: 0;
-    margin: 0;
+    margin: auto;
 }
 
 footer {  
@@ -75,8 +70,9 @@ footer {
     position: fixed;
     bottom: 0px;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
     border-top: 8px solid #4aaaa5;
+    color: #dddddd;
 }
 
 #mainsection {
@@ -86,12 +82,22 @@ footer {
     border: solid #dddddd;
     position: relative;
     top: 50px;
-    left: 10%;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
-    margin: 0; 
-    float: left;
+    margin: auto
 
+}
+
+#portfoliosection {
+    background: #ffffff;
+    height: 550pt;
+    width: 960px;
+    border: solid #dddddd;
+    position: relative;
+    top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: auto
 }
 
 h3  {
@@ -102,20 +108,23 @@ h3  {
     left: 20px;
 }
 
+
+
 p {
     position: relative;
     left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    line-height: 100%;
+    padding-right: 20px;
+    
 }
 
 body {
-    /* position: relative;
-    height: 100%;
-    width: 100%; */
     background-image: url("../images/carbon.png");
     background-repeat: repeat;
-    margin: 0;
+    margin: auto;
     padding: 0;
-    /* border: solid black; */
     z-index: 1;
     color: #777777;
 }
@@ -123,6 +132,7 @@ body {
 #pic {
     float: left;
     border: solid black;
+    margin-left: 20px;
 }
 
 #headerbg {
@@ -131,25 +141,50 @@ body {
     height: 50px;
     width: 100%;
     float: left;
+    border-bottom: solid #cccccc;
 }
 
-a:link, a:visited, a:active, a:hover {
+a:link, a:visited {
     color: #666666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+
+a:active {
+    color: green;
     text-decoration: none;
 }
 
 hr {
     position: relative;
     bottom: 15px;
+    width: 95%;
+    color: #dddddd;
 }
+
+#headerline {
+    position: relative;
+    color: #dddddd;
+    bottom: 5px;
+    width: 100%;
+}
+
 
 .form1 {
     width: 920px;
+    margin-bottom: 10px;
+    color: #777777;
 }
 
 .form2 {
     width: 920px;
     height: 200px;
+    color: #777777;
 }
 
 form {
@@ -163,4 +198,37 @@ form {
     color: #ffffff;
     height: 40px;
     width: 100px;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 10pt;
+}
+
+.row::after {
+    clear: both;
+    display: table;
+}
+
+.row {
+    max-height: 600px;
+}
+
+img {
+    padding: 2px;
+}
+
+.text-block {
+    position: relative;
+    bottom: 80px;
+    background-color: #4aaaa5;
+    text-align: center;
+    height: 40px;
+    color: white;
+    line-height: 30pt;
+    left: 2px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif
 }
